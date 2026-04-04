@@ -32,28 +32,36 @@ If you are using OpenClaw:
 
 Fastest examples:
 
+If you are already inside the destination workspace, you can avoid typing the full path by targeting the current directory:
+
+```bash
+WORKSPACE_DIR="${PWD}"
+```
+
+If you are not in the destination workspace yet, replace `WORKSPACE_DIR` with the workspace path you want.
+
 **Install one skill**
 
 ```bash
-mkdir -p skills
-cp -R skills/montana-release /path/to/your-workspace/skills/
+mkdir -p "$WORKSPACE_DIR/skills"
+cp -R skills/montana-release "$WORKSPACE_DIR/skills/"
 ```
 
 **Install a React frontend stack**
 
 ```bash
-mkdir -p skills
-cp -R skills/montana-intake /path/to/your-workspace/skills/
-cp -R skills/montana-ts /path/to/your-workspace/skills/
-cp -R skills/montana-react /path/to/your-workspace/skills/
-cp -R skills/montana-frontend-architecture /path/to/your-workspace/skills/
+mkdir -p "$WORKSPACE_DIR/skills"
+cp -R skills/montana-intake "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-ts "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-react "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-frontend-architecture "$WORKSPACE_DIR/skills/"
 ```
 
 **Install the whole pack**
 
 ```bash
-mkdir -p skills
-cp -R skills/* /path/to/your-workspace/skills/
+mkdir -p "$WORKSPACE_DIR/skills"
+cp -R skills/* "$WORKSPACE_DIR/skills/"
 ```
 
 For Claude Code and Codex, use the adapter kits in `adapters/`.
@@ -153,8 +161,8 @@ OpenClaw is the runtime most directly supported by the canonical `skills/` folde
 Copy one skill folder into your workspace `skills/` directory:
 
 ```bash
-mkdir -p skills
-cp -R skills/montana-release /path/to/your-workspace/skills/
+mkdir -p "$WORKSPACE_DIR/skills"
+cp -R skills/montana-release "$WORKSPACE_DIR/skills/"
 ```
 
 #### Install a stack
@@ -162,27 +170,27 @@ cp -R skills/montana-release /path/to/your-workspace/skills/
 Example: React frontend stack
 
 ```bash
-mkdir -p skills
-cp -R skills/montana-intake /path/to/your-workspace/skills/
-cp -R skills/montana-ts /path/to/your-workspace/skills/
-cp -R skills/montana-react /path/to/your-workspace/skills/
-cp -R skills/montana-frontend-architecture /path/to/your-workspace/skills/
+mkdir -p "$WORKSPACE_DIR/skills"
+cp -R skills/montana-intake "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-ts "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-react "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-frontend-architecture "$WORKSPACE_DIR/skills/"
 ```
 
 Example: Go backend stack
 
 ```bash
-mkdir -p skills
-cp -R skills/montana-intake /path/to/your-workspace/skills/
-cp -R package/skills/montana-go skills/
-cp -R package/skills/montana-backend-architecture skills/
+mkdir -p "$WORKSPACE_DIR/skills"
+cp -R skills/montana-intake "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-go "$WORKSPACE_DIR/skills/"
+cp -R skills/montana-backend-architecture "$WORKSPACE_DIR/skills/"
 ```
 
 #### Install the whole pack
 
 ```bash
-mkdir -p skills
-cp -R skills/* /path/to/your-workspace/skills/
+mkdir -p "$WORKSPACE_DIR/skills"
+cp -R skills/* "$WORKSPACE_DIR/skills/"
 ```
 
 Then invoke in OpenClaw using the installed skill names. Slash command support depends on your UI/config.
@@ -193,15 +201,15 @@ Claude support is shipped as an **adapter kit**, not as a claimed direct install
 If you want Claude support:
 
 1. Choose one skill, a stack, or the whole pack from `skills/`.
-2. Use `package/adapters/claude/` to map that selection into Claude-specific commands or agents.
+2. Use `adapters/claude/` to map that selection into Claude-specific commands or agents.
 3. Verify the generated Claude-facing files against the current Claude runtime surface before distributing them to users.
 
 Included in the adapter kit:
 
-- `package/adapters/claude/README.md`
-- `package/adapters/claude/MANIFEST.json`
-- `package/adapters/claude/COMMAND_TEMPLATE.md`
-- `package/adapters/claude/AGENT_TEMPLATE.md`
+- `adapters/claude/README.md`
+- `adapters/claude/MANIFEST.json`
+- `adapters/claude/COMMAND_TEMPLATE.md`
+- `adapters/claude/AGENT_TEMPLATE.md`
 
 ### Codex
 Codex support is also shipped as an **adapter kit**.
@@ -209,18 +217,17 @@ Codex support is also shipped as an **adapter kit**.
 If you want Codex support:
 
 1. Choose one skill, a stack, or the whole pack from `skills/`.
-2. Use `package/adapters/codex/` to wrap that selection for the Codex surface you support.
+2. Use `adapters/codex/` to wrap that selection for the Codex surface you support.
 3. Verify the generated Codex-facing files against the current Codex runtime surface before distributing them to users.
 
 Included in the adapter kit:
 
-- `package/adapters/codex/README.md`
-- `package/adapters/codex/MANIFEST.json`
-- `package/adapters/codex/PROMPT_TEMPLATE.md`
-- `package/adapters/codex/SKILL_WRAPPER_TEMPLATE.md`
+- `adapters/codex/README.md`
+- `adapters/codex/MANIFEST.json`
+- `adapters/codex/PROMPT_TEMPLATE.md`
+- `adapters/codex/SKILL_WRAPPER_TEMPLATE.md`
 
-See `package/maintainers/PUBLISHING.md` for the supported distribution stance.
-See `package/SUPPORT_MATRIX.md` for the publication support contract.
+See `SUPPORT_MATRIX.md` for the publication support contract.
 
 ## Repo metadata
 
@@ -245,19 +252,15 @@ Suggested GitHub topics:
 
 Each skill is **self-contained**. Any templates/examples needed by a skill are bundled inside that skill’s folder.
 Common templates live under each skill’s `templates/` directory (for example JSDoc, docstrings, tests, release notes).
-To create or update skills consistently, use:
+To evaluate and maintain skills consistently, use:
 
-- `package/templates/SKILL_TEMPLATE.md`
-- `package/templates/SKILL_CHECKLIST.md`
-- `package/templates/STACK_TEMPLATE.md`
-- `package/adapters/`
-- `package/MANIFEST.json`
-- `package/.gitignore`
+- `tests/skill-eval/README.md`
+- `tests/skill-eval/scripts/evaluate_skills.py`
+- `tests/skill-eval/cases/`
+- `tests/skill-eval/transcripts/codex/`
+- `MANIFEST.json`
+- `adapters/`
 
 ## License
 
-See `package/LICENSE`.
-
-## Publishing (maintainers)
-
-If you’re publishing this pack for public users, follow `package/maintainers/PUBLISHING.md`.
+See `LICENSE`.

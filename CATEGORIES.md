@@ -13,7 +13,7 @@ This lets a developer create an agent stack like:
 - `montana-go` + `montana-backend-architecture`
 - `montana-ts` + `montana-backend-architecture` + `montana-usecase-delivery`
 
-For tooling and automation, the machine-readable equivalent lives in `package/MANIFEST.json`.
+For tooling and automation, the machine-readable equivalent lives in `MANIFEST.json`.
 
 ## Category model
 

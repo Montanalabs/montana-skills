@@ -1,3 +1,5 @@
 maintainers/
 scripts/
 templates/
+tmp/
+tests/
