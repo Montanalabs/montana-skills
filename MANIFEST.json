@@ -1,0 +1,92 @@
+{
+  "name": "montana-skills-pack",
+  "version": "0.1.0",
+  "authoring_format": "Agent Skills-style SKILL.md",
+  "supported_targets": {
+    "openclaw": "supported",
+    "claude": "adapter-kit-included",
+    "codex": "adapter-kit-included"
+  },
+  "categories": [
+    "intake",
+    "language",
+    "framework",
+    "architecture",
+    "use-case"
+  ],
+  "skills": [
+    {
+      "name": "montana-intake",
+      "category": "intake",
+      "composes_with": ["montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-release"]
+    },
+    {
+      "name": "montana-rust",
+      "category": "language",
+      "composes_with": ["montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-go",
+      "category": "language",
+      "composes_with": ["montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-py",
+      "category": "language",
+      "composes_with": ["montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-ts",
+      "category": "language",
+      "composes_with": ["montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-js",
+      "category": "language",
+      "composes_with": ["montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-react",
+      "category": "framework",
+      "composes_with": ["montana-ts", "montana-js", "montana-frontend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "montana-frontend-architecture",
+      "category": "architecture",
+      "composes_with": ["montana-ts", "montana-js", "montana-react", "montana-usecase-delivery"]
+    },
+    {
+      "name": "montana-backend-architecture",
+      "category": "architecture",
+      "composes_with": ["montana-go", "montana-py", "montana-ts", "montana-rust", "montana-usecase-delivery"]
+    },
+    {
+      "name": "montana-usecase-delivery",
+      "category": "use-case",
+      "composes_with": ["montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-frontend-architecture", "montana-backend-architecture"]
+    },
+    {
+      "name": "montana-release",
+      "category": "use-case",
+      "composes_with": ["montana-usecase-delivery", "montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-frontend-architecture", "montana-backend-architecture"]
+    }
+  ],
+  "recommended_stacks": [
+    {
+      "name": "react-frontend",
+      "skills": ["montana-intake", "montana-ts", "montana-react", "montana-frontend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "go-backend-api",
+      "skills": ["montana-intake", "montana-go", "montana-backend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "typescript-backend-service",
+      "skills": ["montana-intake", "montana-ts", "montana-backend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "python-service",
+      "skills": ["montana-intake", "montana-py", "montana-backend-architecture", "montana-usecase-delivery"]
+    }
+  ]
+}
