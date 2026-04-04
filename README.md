@@ -128,7 +128,6 @@ However, **100% consistency across all developers/projects requires tooling + en
 
 This pack guides agents to use those tools; it cannot replace them.
 
-## Safety guarantees (by design)
 
 These skills are written for public use:
 
