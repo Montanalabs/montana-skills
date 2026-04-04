@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Montana Skills logo" width="180">
+</p>
+
 # Montana Skills Pack
 
 Montana Skills Pack is an open-source collection of **self-contained, production-oriented, composable skills** for engineering agents.
@@ -15,9 +19,9 @@ All skills use a shared **Agent Skills-style** authoring format (`SKILL.md` with
 
 If you are using OpenClaw:
 
-- install **one skill** by copying one folder from `package/skills/`
+- install **one skill** by copying one folder from `skills/`
 - install **a stack** by copying the recommended folders for that stack
-- install **the whole pack** by copying everything under `package/skills/`
+- install **the whole pack** by copying everything under `skills/`
 
 Fastest examples:
 
@@ -25,31 +29,31 @@ Fastest examples:
 
 ```bash
 mkdir -p skills
-cp -R package/skills/montana-release skills/
+cp -R skills/montana-release /path/to/your-workspace/skills/
 ```
 
 **Install a React frontend stack**
 
 ```bash
 mkdir -p skills
-cp -R package/skills/montana-intake skills/
-cp -R package/skills/montana-ts skills/
-cp -R package/skills/montana-react skills/
-cp -R package/skills/montana-frontend-architecture skills/
+cp -R skills/montana-intake /path/to/your-workspace/skills/
+cp -R skills/montana-ts /path/to/your-workspace/skills/
+cp -R skills/montana-react /path/to/your-workspace/skills/
+cp -R skills/montana-frontend-architecture /path/to/your-workspace/skills/
 ```
 
 **Install the whole pack**
 
 ```bash
 mkdir -p skills
-cp -R package/skills/* skills/
+cp -R skills/* /path/to/your-workspace/skills/
 ```
 
-For Claude Code and Codex, use the adapter kits in `package/adapters/`.
+For Claude Code and Codex, use the adapter kits in `adapters/`.
 
 ## What’s inside
 
-Skills live in `package/skills/`:
+Skills live in `skills/`:
 
 ### Intake
 - `montana-intake` — project understanding + “how to proceed” checklist
@@ -72,8 +76,8 @@ Skills live in `package/skills/`:
 - `montana-usecase-delivery` — request scoping, acceptance criteria, definition of done
 - `montana-release` — changelog/release notes + safe release checklist
 
-See `package/CATEGORIES.md` for the composition model.
-See `package/MANIFEST.json` for machine-readable categories, composition, and recommended stacks.
+See `CATEGORIES.md` for the composition model.
+See `MANIFEST.json` for machine-readable categories, composition, and recommended stacks.
 
 ## Recommended stacks
 
@@ -109,7 +113,7 @@ Common examples:
 - Single skill: `montana-release`
 - Frontend stack: `montana-intake`, `montana-ts`, `montana-react`, `montana-frontend-architecture`
 - Backend stack: `montana-intake`, `montana-go`, `montana-backend-architecture`
-- Full pack: every folder under `package/skills/`
+- Full pack: every folder under `skills/`
 
 ## Consistency promise (what this pack can and can’t guarantee)
 
@@ -144,7 +148,7 @@ Copy one skill folder into your workspace `skills/` directory:
 
 ```bash
 mkdir -p skills
-cp -R package/skills/montana-release skills/
+cp -R skills/montana-release /path/to/your-workspace/skills/
 ```
 
 #### Install a stack
@@ -153,17 +157,17 @@ Example: React frontend stack
 
 ```bash
 mkdir -p skills
-cp -R package/skills/montana-intake skills/
-cp -R package/skills/montana-ts skills/
-cp -R package/skills/montana-react skills/
-cp -R package/skills/montana-frontend-architecture skills/
+cp -R skills/montana-intake /path/to/your-workspace/skills/
+cp -R skills/montana-ts /path/to/your-workspace/skills/
+cp -R skills/montana-react /path/to/your-workspace/skills/
+cp -R skills/montana-frontend-architecture /path/to/your-workspace/skills/
 ```
 
 Example: Go backend stack
 
 ```bash
 mkdir -p skills
-cp -R package/skills/montana-intake skills/
+cp -R skills/montana-intake /path/to/your-workspace/skills/
 cp -R package/skills/montana-go skills/
 cp -R package/skills/montana-backend-architecture skills/
 ```
@@ -172,7 +176,7 @@ cp -R package/skills/montana-backend-architecture skills/
 
 ```bash
 mkdir -p skills
-cp -R package/skills/* skills/
+cp -R skills/* /path/to/your-workspace/skills/
 ```
 
 Then invoke in OpenClaw using the installed skill names. Slash command support depends on your UI/config.
@@ -182,7 +186,7 @@ Claude support is shipped as an **adapter kit**, not as a claimed direct install
 
 If you want Claude support:
 
-1. Choose one skill, a stack, or the whole pack from `package/skills/`.
+1. Choose one skill, a stack, or the whole pack from `skills/`.
 2. Use `package/adapters/claude/` to map that selection into Claude-specific commands or agents.
 3. Verify the generated Claude-facing files against the current Claude runtime surface before distributing them to users.
 
@@ -198,7 +202,7 @@ Codex support is also shipped as an **adapter kit**.
 
 If you want Codex support:
 
-1. Choose one skill, a stack, or the whole pack from `package/skills/`.
+1. Choose one skill, a stack, or the whole pack from `skills/`.
 2. Use `package/adapters/codex/` to wrap that selection for the Codex surface you support.
 3. Verify the generated Codex-facing files against the current Codex runtime surface before distributing them to users.
 
