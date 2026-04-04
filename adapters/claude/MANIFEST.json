@@ -1,0 +1,23 @@
+{
+  "target": "claude",
+  "status": "adapter-kit-included",
+  "source_manifest": "../../MANIFEST.json",
+  "wrappers": [
+    { "source_skill": "montana-intake", "recommended_surface": "agent" },
+    { "source_skill": "montana-rust", "recommended_surface": "command" },
+    { "source_skill": "montana-go", "recommended_surface": "command" },
+    { "source_skill": "montana-py", "recommended_surface": "command" },
+    { "source_skill": "montana-ts", "recommended_surface": "command" },
+    { "source_skill": "montana-js", "recommended_surface": "command" },
+    { "source_skill": "montana-react", "recommended_surface": "agent" },
+    { "source_skill": "montana-frontend-architecture", "recommended_surface": "agent" },
+    { "source_skill": "montana-backend-architecture", "recommended_surface": "agent" },
+    { "source_skill": "montana-usecase-delivery", "recommended_surface": "agent" },
+    { "source_skill": "montana-release", "recommended_surface": "command" }
+  ],
+  "verification": {
+    "native_runtime_verified": false,
+    "note": "Adapter kit is included, but the current Claude runtime integration path must still be verified in a real Claude environment."
+  }
+}
+
