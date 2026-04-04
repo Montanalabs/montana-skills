@@ -2,6 +2,13 @@
   <img src="assets/logo.png" alt="Montana Skills logo" width="180">
 </p>
 
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-v0.1.0-black">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-white">
+</p>
+
+<p align="center"><strong>Compatible with OpenClaw, Claude Code, and Codex.</strong></p>
+
 # Montana Skills Pack
 
 Montana Skills Pack is an open-source collection of **self-contained, production-oriented, composable skills** for engineering agents.
