@@ -30,14 +30,6 @@ Generated files:
 - `tests/skill-eval/reports/skill-evaluation.json`
 - `tests/skill-eval/reports/skill-evaluation.md`
 
-## Transcript policy
+## Transcripts
 
-The checked-in transcripts represent the runtime currently prioritized in this repo: Codex.
-
-Each transcript should record:
-
-- the case prompt
-- what repo facts were discovered
-- what commands were attempted
-- what environment blockers existed
-- a short judgment of how well the skill guidance held up
+The checked-in transcripts capture example runtime behavior for the cases currently exercised in this repo.
