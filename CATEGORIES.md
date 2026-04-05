@@ -1,6 +1,6 @@
 # Montana Skill Categories
 
-Montana skills are meant to be **composable**. Public users should be able to combine:
+Montana skills are meant to be **composable**. Users can combine:
 
 - a **global contract skill**
 - a **language skill**
@@ -10,7 +10,7 @@ Montana skills are meant to be **composable**. Public users should be able to co
 - optional **pattern skills**
 - an optional **workflow or use-case skill**
 
-This lets a developer create an agent stack like:
+This lets a developer build an agent stack like:
 
 - `montana-global-contract` + `montana-ts` + `montana-ts-style-decisions` + `montana-react`
 - `montana-global-contract` + `montana-go` + `montana-go-service-patterns` + `montana-backend-architecture`

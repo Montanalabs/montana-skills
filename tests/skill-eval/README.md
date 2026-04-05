@@ -1,13 +1,13 @@
 # Skill Evaluation Workflow
 
-This is the permanent evaluation harness for the Montana skills pack.
+This is the evaluation harness for the Montana skills pack.
 
 It covers four things:
 
 1. static consistency checks for the skill files
 2. fixture repos that expose realistic bugs or workflow tasks
 3. scored case rubrics for each skill
-4. saved runtime transcripts for reproducible review
+4. saved runtime transcripts for comparison and review
 
 ## Layout
 
