@@ -1,6 +1,6 @@
 maintainers/
-scripts/
-templates/
+/scripts/
+/templates/
 tmp/
 tests/skill-eval/fixtures/python-service/src/__pycache__/
 tests/skill-eval/fixtures/rust-cli/target/
