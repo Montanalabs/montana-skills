@@ -1,0 +1,9 @@
+{
+  "name": "js-node-service-fixture",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "node --test"
+  }
+}

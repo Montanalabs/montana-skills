@@ -1,0 +1,1280 @@
+{
+  "repo_root": "/Users/ricardoarcifa/Desktop/montana-skills",
+  "skills": [
+    {
+      "name": "montana-backend-architecture",
+      "category": "architecture",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/repository-boundary.md",
+        "templates/request-flow.md",
+        "templates/service-template.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-rust",
+        "montana-usecase-delivery",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-rust",
+        "montana-usecase-delivery",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns"
+      ]
+    },
+    {
+      "name": "montana-frontend-architecture",
+      "category": "architecture",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/feature-module-template.md",
+        "templates/state-ownership-checklist.md",
+        "templates/ui-boundaries.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-usecase-delivery",
+        "montana-ts-style-decisions",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-ts-runtime-validation",
+        "montana-react-form-patterns",
+        "montana-pattern-conditional-rendering"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-usecase-delivery",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-pattern-conditional-rendering"
+      ]
+    },
+    {
+      "name": "montana-global-contract",
+      "category": "global",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-release",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ],
+      "manifest_composes_with": [
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-release",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ]
+    },
+    {
+      "name": "montana-go",
+      "category": "language",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/context-guidelines.md",
+        "templates/exported-comment.md",
+        "templates/package-doc.md",
+        "templates/table-driven-test.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-go-http-boundaries",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-go-service-patterns",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-go-service-patterns",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ]
+    },
+    {
+      "name": "montana-go-service-patterns",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ]
+    },
+    {
+      "name": "montana-go-testing-patterns",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-go",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-intake",
+      "category": "intake",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/definition-of-done.md",
+        "templates/project-conventions.md",
+        "templates/question-set.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-release",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-release",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ]
+    },
+    {
+      "name": "montana-js",
+      "category": "language",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/error-handling.md",
+        "templates/jsdoc-exported.md",
+        "templates/node-module-patterns.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-pattern-conditional-rendering",
+      "category": "pattern",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ]
+    },
+    {
+      "name": "montana-pattern-regression-bugfix",
+      "category": "pattern",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-usecase-delivery",
+        "montana-go-service-patterns",
+        "montana-rust-error-patterns",
+        "montana-ts-runtime-validation",
+        "montana-react-state-ownership"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-usecase-delivery",
+        "montana-go-service-patterns",
+        "montana-rust-error-patterns",
+        "montana-ts-runtime-validation",
+        "montana-react-state-ownership"
+      ]
+    },
+    {
+      "name": "montana-py",
+      "category": "language",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/error-style.md",
+        "templates/google-docstring.md",
+        "templates/pytest-test.md",
+        "templates/type-hinting.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-react",
+      "category": "framework",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/accessibility-checklist.md",
+        "templates/component-template.md",
+        "templates/hook-template.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ]
+    },
+    {
+      "name": "montana-react-form-patterns",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-ts",
+        "montana-js",
+        "montana-ts-runtime-validation",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-ts",
+        "montana-js",
+        "montana-ts-runtime-validation",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-react-rendering-patterns",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ]
+    },
+    {
+      "name": "montana-react-state-ownership",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-react-rendering-patterns",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-react-rendering-patterns",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ]
+    },
+    {
+      "name": "montana-release",
+      "category": "use-case",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/changelog-entry.md",
+        "templates/release-checklist.md",
+        "templates/release-notes.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-backend-architecture"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-frontend-architecture",
+        "montana-backend-architecture"
+      ]
+    },
+    {
+      "name": "montana-rust",
+      "category": "language",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/error-handling.md",
+        "templates/module-doc.md",
+        "templates/rustdoc-public.md",
+        "templates/test-patterns.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-rust-error-patterns",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ]
+    },
+    {
+      "name": "montana-rust-module-boundaries",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-rust-error-patterns",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-rust-error-patterns",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake"
+      ]
+    },
+    {
+      "name": "montana-rust-testing-patterns",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-rust",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-ts",
+      "category": "language",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/jsdoc-exported.md",
+        "templates/migration-plan.md",
+        "templates/module-boundary.md",
+        "templates/runtime-validation.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-intake",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-ts-error-patterns",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-react",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-react",
+        "montana-backend-architecture",
+        "montana-usecase-delivery",
+        "montana-pattern-regression-bugfix"
+      ]
+    },
+    {
+      "name": "montana-ts-runtime-validation",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-ts-style-decisions",
+        "montana-react",
+        "montana-backend-architecture",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-ts-style-decisions",
+        "montana-react",
+        "montana-backend-architecture",
+        "montana-frontend-architecture",
+        "montana-usecase-delivery"
+      ]
+    },
+    {
+      "name": "montana-ts-style-decisions",
+      "category": "decision",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-ts",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-usecase-delivery"
+      ]
+    },
+    {
+      "name": "montana-usecase-delivery",
+      "category": "use-case",
+      "score": 10,
+      "max_score": 10,
+      "passed_checks": [
+        "Frontmatter contains name and description",
+        "Core sections are present",
+        "All referenced templates exist",
+        "Manifest category matches skill metadata",
+        "Works with list matches MANIFEST compose rules"
+      ],
+      "findings": [],
+      "template_refs": [
+        "templates/acceptance-criteria.md",
+        "templates/bugfix-template.md",
+        "templates/implementation-plan.md"
+      ],
+      "missing_templates": [],
+      "works_with": [
+        "montana-global-contract",
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ],
+      "manifest_composes_with": [
+        "montana-global-contract",
+        "montana-intake",
+        "montana-rust",
+        "montana-go",
+        "montana-py",
+        "montana-ts",
+        "montana-js",
+        "montana-react",
+        "montana-frontend-architecture",
+        "montana-backend-architecture",
+        "montana-ts-style-decisions",
+        "montana-ts-runtime-validation",
+        "montana-ts-error-patterns",
+        "montana-react-rendering-patterns",
+        "montana-react-state-ownership",
+        "montana-react-form-patterns",
+        "montana-go-service-patterns",
+        "montana-go-http-boundaries",
+        "montana-go-testing-patterns",
+        "montana-rust-error-patterns",
+        "montana-rust-module-boundaries",
+        "montana-rust-testing-patterns",
+        "montana-pattern-regression-bugfix",
+        "montana-pattern-conditional-rendering"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "name": "montana-backend-architecture",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-frontend-architecture",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-global-contract",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-go-http-boundaries",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-go-service-patterns",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-go-testing-patterns",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-go",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-intake",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-js",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-pattern-conditional-rendering",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-pattern-regression-bugfix",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-py",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-react-form-patterns",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-react-rendering-patterns",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-react-state-ownership",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-react",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-release",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-rust-error-patterns",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-rust-module-boundaries",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-rust-testing-patterns",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-rust",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-ts-error-patterns",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-ts-runtime-validation",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-ts-style-decisions",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-ts",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    },
+    {
+      "name": "montana-usecase-delivery",
+      "score": 4,
+      "max_score": 4,
+      "findings": [],
+      "transcript_present": true
+    }
+  ],
+  "doc_findings": []
+}

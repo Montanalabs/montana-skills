@@ -2,4 +2,5 @@ maintainers/
 scripts/
 templates/
 tmp/
-tests/
+tests/skill-eval/fixtures/python-service/src/__pycache__/
+tests/skill-eval/fixtures/rust-cli/target/
