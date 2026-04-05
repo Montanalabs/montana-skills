@@ -1,7 +1,7 @@
 ---
 name: montana-backend-architecture
 description: Backend architecture skill for service boundaries, use-case flow, persistence isolation, and maintainable APIs.
-metadata: {"montana":{"category":"architecture","composesWith":["montana-go","montana-py","montana-ts","montana-rust","montana-usecase-delivery"]}}
+metadata: {"montana":{"category":"architecture","composesWith":["montana-global-contract","montana-go","montana-py","montana-ts","montana-rust","montana-usecase-delivery","montana-go-service-patterns","montana-go-http-boundaries","montana-go-testing-patterns","montana-rust-error-patterns","montana-rust-module-boundaries","montana-rust-testing-patterns","montana-ts-style-decisions","montana-ts-runtime-validation","montana-ts-error-patterns"]}}
 ---
 
 Use this skill when building or modifying backend services, APIs, jobs, or service-layer logic.
@@ -10,11 +10,21 @@ Use this skill when building or modifying backend services, APIs, jobs, or servi
 - Architecture
 
 ## Works with
+- `montana-global-contract`
 - `montana-go`
 - `montana-py`
 - `montana-ts`
 - `montana-rust`
 - `montana-usecase-delivery`
+- `montana-go-service-patterns`
+- `montana-go-http-boundaries`
+- `montana-go-testing-patterns`
+- `montana-rust-error-patterns`
+- `montana-rust-module-boundaries`
+- `montana-rust-testing-patterns`
+- `montana-ts-style-decisions`
+- `montana-ts-runtime-validation`
+- `montana-ts-error-patterns`
 
 ## Consistency contract (non-negotiables)
 - Keep transport, use-case, domain, and persistence concerns separated.

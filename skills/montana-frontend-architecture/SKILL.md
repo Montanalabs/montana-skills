@@ -1,7 +1,7 @@
 ---
 name: montana-frontend-architecture
 description: Frontend architecture skill for feature structure, UI boundaries, state ownership, and maintainable client-side code.
-metadata: {"montana":{"category":"architecture","composesWith":["montana-ts","montana-js","montana-react","montana-usecase-delivery"]}}
+metadata: {"montana":{"category":"architecture","composesWith":["montana-global-contract","montana-ts","montana-js","montana-react","montana-usecase-delivery","montana-ts-style-decisions","montana-ts-runtime-validation","montana-react-rendering-patterns","montana-react-state-ownership","montana-react-form-patterns","montana-pattern-conditional-rendering"]}}
 ---
 
 Use this skill when the agent needs to shape or preserve the structure of a frontend application.
@@ -10,10 +10,17 @@ Use this skill when the agent needs to shape or preserve the structure of a fron
 - Architecture
 
 ## Works with
+- `montana-global-contract`
 - `montana-ts`
 - `montana-js`
 - `montana-react`
 - `montana-usecase-delivery`
+- `montana-ts-style-decisions`
+- `montana-react-rendering-patterns`
+- `montana-react-state-ownership`
+- `montana-ts-runtime-validation`
+- `montana-react-form-patterns`
+- `montana-pattern-conditional-rendering`
 
 ## Consistency contract (non-negotiables)
 - Separate UI rendering, domain logic, and data access concerns.

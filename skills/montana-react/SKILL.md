@@ -1,7 +1,7 @@
 ---
 name: montana-react
 description: React frontend skill for component design, state flow, accessibility, and maintainable UI implementation.
-metadata: {"montana":{"category":"framework","composesWith":["montana-ts","montana-js","montana-frontend-architecture","montana-usecase-delivery"]}}
+metadata: {"montana":{"category":"framework","composesWith":["montana-global-contract","montana-ts","montana-js","montana-frontend-architecture","montana-usecase-delivery","montana-react-rendering-patterns","montana-react-state-ownership","montana-react-form-patterns","montana-ts-style-decisions","montana-ts-runtime-validation","montana-pattern-regression-bugfix","montana-pattern-conditional-rendering"]}}
 ---
 
 Use this skill when building or updating React-based frontend applications.
@@ -10,10 +10,18 @@ Use this skill when building or updating React-based frontend applications.
 - Framework
 
 ## Works with
+- `montana-global-contract`
 - `montana-ts`
 - `montana-js`
 - `montana-frontend-architecture`
 - `montana-usecase-delivery`
+- `montana-react-rendering-patterns`
+- `montana-react-state-ownership`
+- `montana-react-form-patterns`
+- `montana-ts-style-decisions`
+- `montana-ts-runtime-validation`
+- `montana-pattern-regression-bugfix`
+- `montana-pattern-conditional-rendering`
 
 ## Consistency contract (non-negotiables)
 - Prefer existing project patterns over personal preference.

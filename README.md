@@ -87,6 +87,25 @@ Skills live in `skills/`:
 - `montana-frontend-architecture` — feature structure, UI boundaries, state ownership
 - `montana-backend-architecture` — handlers/services/repositories, persistence isolation
 
+### Global + Decision
+- `montana-global-contract` — Montana-wide operating rules for predictable agent behavior
+- `montana-ts-style-decisions` — TypeScript decision rules for functions, type modeling, exports, constants, and nullability
+- `montana-ts-runtime-validation` — TypeScript runtime-boundary validation rules for external input
+- `montana-ts-error-patterns` — TypeScript failure modeling, propagation, and actionable error rules
+- `montana-react-rendering-patterns` — React rendering order and branch-structure rules
+- `montana-react-state-ownership` — React state location, derived state, and hook extraction rules
+- `montana-react-form-patterns` — React form submit, validation feedback, and accessible error-state rules
+- `montana-go-service-patterns` — Go service, handler, and interface-placement rules
+- `montana-go-http-boundaries` — Go HTTP handler transport-boundary rules
+- `montana-go-testing-patterns` — Go focused-test, table-test, and regression-test rules
+- `montana-rust-error-patterns` — Rust error and visibility decision rules
+- `montana-rust-module-boundaries` — Rust module visibility and public-surface rules
+- `montana-rust-testing-patterns` — Rust focused verification and regression-testing rules
+
+### Patterns
+- `montana-pattern-regression-bugfix` — repeatable Montana bugfix flow: reproduce, isolate, fix narrowly, add regression protection, verify
+- `montana-pattern-conditional-rendering` — repeatable Montana UI state ordering and early-return rendering pattern
+
 ### Use-case / Workflow
 - `montana-usecase-delivery` — request scoping, acceptance criteria, definition of done
 - `montana-release` — changelog/release notes + safe release checklist
@@ -97,22 +116,52 @@ See `MANIFEST.json` for machine-readable categories, composition, and recommende
 ## Recommended stacks
 
 ### React frontend app
+- `montana-global-contract`
 - `montana-intake`
 - `montana-ts`
+- `montana-ts-style-decisions`
+- `montana-ts-runtime-validation`
+- `montana-ts-error-patterns`
 - `montana-react`
+- `montana-react-rendering-patterns`
+- `montana-react-state-ownership`
+- `montana-react-form-patterns`
 - `montana-frontend-architecture`
+- optional: `montana-pattern-conditional-rendering`
+- optional: `montana-pattern-regression-bugfix`
 - optional: `montana-usecase-delivery`
 
 ### Go backend API
+- `montana-global-contract`
 - `montana-intake`
 - `montana-go`
+- `montana-go-service-patterns`
+- `montana-go-http-boundaries`
+- `montana-go-testing-patterns`
 - `montana-backend-architecture`
+- optional: `montana-pattern-regression-bugfix`
 - optional: `montana-usecase-delivery`
 
 ### TypeScript backend service
+- `montana-global-contract`
 - `montana-intake`
 - `montana-ts`
+- `montana-ts-style-decisions`
+- `montana-ts-runtime-validation`
+- `montana-ts-error-patterns`
 - `montana-backend-architecture`
+- optional: `montana-pattern-regression-bugfix`
+- optional: `montana-usecase-delivery`
+
+### Rust backend service
+- `montana-global-contract`
+- `montana-intake`
+- `montana-rust`
+- `montana-rust-error-patterns`
+- `montana-rust-module-boundaries`
+- `montana-rust-testing-patterns`
+- `montana-backend-architecture`
+- optional: `montana-pattern-regression-bugfix`
 - optional: `montana-usecase-delivery`
 
 ## Install options
@@ -228,6 +277,17 @@ Included in the adapter kit:
 - `adapters/codex/SKILL_WRAPPER_TEMPLATE.md`
 
 See `SUPPORT_MATRIX.md` for the publication support contract.
+
+## CI / Audits
+
+This repo includes GitHub Actions for:
+
+- skill-pack integrity auditing via `tests/skill-eval/scripts/audit_repo.py`
+- secret scanning with Gitleaks
+- workflow linting with `actionlint`
+- supply-chain posture checks with OpenSSF Scorecard
+
+These checks fit a skills/prompt repository better than dependency-focused scanners alone, because most of the risk here is content drift, unsafe guidance, and accidental secret exposure rather than package dependency churn.
 
 ## Repo metadata
 

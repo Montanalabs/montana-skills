@@ -1,7 +1,7 @@
 ---
 name: montana-ts
 description: TypeScript workflow helper: typecheck, lint/format, safe refactors, and migrations.
-metadata: {"montana":{"category":"language","composesWith":["montana-react","montana-frontend-architecture","montana-backend-architecture","montana-usecase-delivery","montana-intake"]}}
+metadata: {"montana":{"category":"language","composesWith":["montana-global-contract","montana-react","montana-frontend-architecture","montana-backend-architecture","montana-usecase-delivery","montana-intake","montana-ts-style-decisions","montana-ts-runtime-validation","montana-ts-error-patterns","montana-pattern-regression-bugfix"]}}
 ---
 
 Use this skill when working on TypeScript code, fixing type errors, refactoring safely, or doing dependency/tooling migrations with explicit approval.
@@ -10,11 +10,16 @@ Use this skill when working on TypeScript code, fixing type errors, refactoring 
 - Language
 
 ## Works with
+- `montana-global-contract`
 - `montana-react`
 - `montana-frontend-architecture`
 - `montana-backend-architecture`
 - `montana-usecase-delivery`
 - `montana-intake`
+- `montana-ts-style-decisions`
+- `montana-ts-runtime-validation`
+- `montana-ts-error-patterns`
+- `montana-pattern-regression-bugfix`
 
 ## Consistency contract (non-negotiables)
 - Follow repo scripts/configs first (`package.json` scripts, eslint/prettier/tsconfig).

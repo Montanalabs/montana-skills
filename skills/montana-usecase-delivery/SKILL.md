@@ -1,7 +1,7 @@
 ---
 name: montana-usecase-delivery
 description: Use-case delivery skill for turning product requests into scoped implementation plans, acceptance criteria, and verifiable outcomes.
-metadata: {"montana":{"category":"use-case","composesWith":["montana-intake","montana-rust","montana-go","montana-py","montana-ts","montana-js","montana-react","montana-frontend-architecture","montana-backend-architecture"]}}
+metadata: {"montana":{"category":"use-case","composesWith":["montana-global-contract","montana-intake","montana-rust","montana-go","montana-py","montana-ts","montana-js","montana-react","montana-frontend-architecture","montana-backend-architecture","montana-ts-style-decisions","montana-ts-runtime-validation","montana-ts-error-patterns","montana-react-rendering-patterns","montana-react-state-ownership","montana-react-form-patterns","montana-go-service-patterns","montana-go-http-boundaries","montana-go-testing-patterns","montana-rust-error-patterns","montana-rust-module-boundaries","montana-rust-testing-patterns","montana-pattern-regression-bugfix","montana-pattern-conditional-rendering"]}}
 ---
 
 Use this skill when the agent needs to translate a feature request or bug report into a well-scoped implementation with a clear definition of done.
@@ -10,6 +10,7 @@ Use this skill when the agent needs to translate a feature request or bug report
 - Use-case
 
 ## Works with
+- `montana-global-contract`
 - `montana-intake`
 - `montana-rust`
 - `montana-go`
@@ -19,6 +20,20 @@ Use this skill when the agent needs to translate a feature request or bug report
 - `montana-react`
 - `montana-frontend-architecture`
 - `montana-backend-architecture`
+- `montana-ts-style-decisions`
+- `montana-ts-runtime-validation`
+- `montana-ts-error-patterns`
+- `montana-react-rendering-patterns`
+- `montana-react-state-ownership`
+- `montana-react-form-patterns`
+- `montana-go-service-patterns`
+- `montana-go-http-boundaries`
+- `montana-go-testing-patterns`
+- `montana-rust-error-patterns`
+- `montana-rust-module-boundaries`
+- `montana-rust-testing-patterns`
+- `montana-pattern-regression-bugfix`
+- `montana-pattern-conditional-rendering`
 
 ## Consistency contract (non-negotiables)
 - Convert requests into explicit scope, assumptions, risks, and acceptance criteria.

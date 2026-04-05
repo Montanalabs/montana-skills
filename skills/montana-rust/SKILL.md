@@ -1,7 +1,7 @@
 ---
 name: montana-rust
 description: Rust workflow helper: cargo build/test, fmt/clippy, debugging, and safe refactors.
-metadata: {"montana":{"category":"language","composesWith":["montana-backend-architecture","montana-usecase-delivery","montana-intake"]}}
+metadata: {"montana":{"category":"language","composesWith":["montana-global-contract","montana-backend-architecture","montana-usecase-delivery","montana-intake","montana-rust-error-patterns","montana-rust-module-boundaries","montana-rust-testing-patterns","montana-pattern-regression-bugfix"]}}
 ---
 
 Use this skill when working on Rust code (crates/workspaces), fixing compile errors, adding features, or refactoring safely.
@@ -10,9 +10,14 @@ Use this skill when working on Rust code (crates/workspaces), fixing compile err
 - Language
 
 ## Works with
+- `montana-global-contract`
 - `montana-backend-architecture`
 - `montana-usecase-delivery`
 - `montana-intake`
+- `montana-rust-error-patterns`
+- `montana-rust-module-boundaries`
+- `montana-rust-testing-patterns`
+- `montana-pattern-regression-bugfix`
 
 ## Consistency contract (non-negotiables)
 - Prefer the repo’s existing conventions/configs over personal preference.

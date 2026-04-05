@@ -1,7 +1,7 @@
 ---
 name: montana-py
 description: Python workflow helper: venv/deps, ruff/black, mypy, pytest, and safe refactors.
-metadata: {"montana":{"category":"language","composesWith":["montana-backend-architecture","montana-usecase-delivery","montana-intake"]}}
+metadata: {"montana":{"category":"language","composesWith":["montana-global-contract","montana-backend-architecture","montana-usecase-delivery","montana-intake","montana-pattern-regression-bugfix"]}}
 ---
 
 Use this skill when working on Python apps/libraries, fixing failing tests, improving typing, or refactoring safely.
@@ -10,9 +10,11 @@ Use this skill when working on Python apps/libraries, fixing failing tests, impr
 - Language
 
 ## Works with
+- `montana-global-contract`
 - `montana-backend-architecture`
 - `montana-usecase-delivery`
 - `montana-intake`
+- `montana-pattern-regression-bugfix`
 
 ## Consistency contract (non-negotiables)
 - Follow repo conventions/configs first (`pyproject.toml`, lint/format settings, test runner).

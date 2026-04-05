@@ -1,7 +1,7 @@
 ---
 name: montana-intake
 description: Fast project intake: identify stack, commands, tests, structure, and a safe next-step plan.
-metadata: {"montana":{"category":"intake","composesWith":["montana-rust","montana-go","montana-py","montana-ts","montana-js","montana-react","montana-frontend-architecture","montana-backend-architecture","montana-usecase-delivery","montana-release"],"recommendedWith":["montana-usecase-delivery"]}}
+metadata: {"montana":{"category":"intake","composesWith":["montana-global-contract","montana-rust","montana-go","montana-py","montana-ts","montana-js","montana-react","montana-frontend-architecture","montana-backend-architecture","montana-usecase-delivery","montana-release","montana-ts-style-decisions","montana-ts-runtime-validation","montana-ts-error-patterns","montana-react-rendering-patterns","montana-react-state-ownership","montana-react-form-patterns","montana-go-service-patterns","montana-go-http-boundaries","montana-go-testing-patterns","montana-rust-error-patterns","montana-rust-module-boundaries","montana-rust-testing-patterns","montana-pattern-regression-bugfix","montana-pattern-conditional-rendering"],"recommendedWith":["montana-usecase-delivery","montana-global-contract"]}}
 ---
 
 Use this skill when starting in an unfamiliar repo, before making changes, or when the user says “help me get oriented”.
@@ -10,6 +10,7 @@ Use this skill when starting in an unfamiliar repo, before making changes, or wh
 - Intake
 
 ## Works with
+- `montana-global-contract`
 - `montana-rust`
 - `montana-go`
 - `montana-py`
@@ -20,6 +21,20 @@ Use this skill when starting in an unfamiliar repo, before making changes, or wh
 - `montana-backend-architecture`
 - `montana-usecase-delivery`
 - `montana-release`
+- `montana-ts-style-decisions`
+- `montana-ts-runtime-validation`
+- `montana-ts-error-patterns`
+- `montana-react-rendering-patterns`
+- `montana-react-state-ownership`
+- `montana-react-form-patterns`
+- `montana-go-service-patterns`
+- `montana-go-http-boundaries`
+- `montana-go-testing-patterns`
+- `montana-rust-error-patterns`
+- `montana-rust-module-boundaries`
+- `montana-rust-testing-patterns`
+- `montana-pattern-regression-bugfix`
+- `montana-pattern-conditional-rendering`
 
 ## Consistency contract (what this skill sets up)
 The goal is to make agent work **consistent across developers** by:

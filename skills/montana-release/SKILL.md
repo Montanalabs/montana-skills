@@ -1,7 +1,7 @@
 ---
 name: montana-release
 description: Release helper: produce changelog + release notes and a safe, confirmation-first release checklist.
-metadata: {"montana":{"category":"use-case","composesWith":["montana-usecase-delivery","montana-intake","montana-rust","montana-go","montana-py","montana-ts","montana-js","montana-frontend-architecture","montana-backend-architecture"]}}
+metadata: {"montana":{"category":"use-case","composesWith":["montana-global-contract","montana-usecase-delivery","montana-intake","montana-rust","montana-go","montana-py","montana-ts","montana-js","montana-frontend-architecture","montana-backend-architecture"]}}
 ---
 
 Use this skill when preparing a public release: changelog entries, release notes, and a safe “what to run” checklist.
@@ -10,6 +10,7 @@ Use this skill when preparing a public release: changelog entries, release notes
 - Use-case
 
 ## Works with
+- `montana-global-contract`
 - `montana-usecase-delivery`
 - `montana-intake`
 - `montana-rust`

@@ -8,85 +8,167 @@
     "codex": "adapter-kit-included"
   },
   "categories": [
+    "global",
     "intake",
     "language",
     "framework",
     "architecture",
-    "use-case"
+    "use-case",
+    "decision",
+    "pattern"
   ],
   "skills": [
     {
+      "name": "montana-global-contract",
+      "category": "global",
+      "composes_with": ["montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-release", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-ts-error-patterns", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-react-form-patterns", "montana-go-service-patterns", "montana-go-http-boundaries", "montana-go-testing-patterns", "montana-rust-error-patterns", "montana-rust-module-boundaries", "montana-rust-testing-patterns", "montana-pattern-regression-bugfix", "montana-pattern-conditional-rendering"]
+    },
+    {
       "name": "montana-intake",
       "category": "intake",
-      "composes_with": ["montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-release"]
+      "composes_with": ["montana-global-contract", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-release", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-ts-error-patterns", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-react-form-patterns", "montana-go-service-patterns", "montana-go-http-boundaries", "montana-go-testing-patterns", "montana-rust-error-patterns", "montana-rust-module-boundaries", "montana-rust-testing-patterns", "montana-pattern-regression-bugfix", "montana-pattern-conditional-rendering"]
     },
     {
       "name": "montana-rust",
       "category": "language",
-      "composes_with": ["montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+      "composes_with": ["montana-global-contract", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake", "montana-rust-error-patterns", "montana-rust-module-boundaries", "montana-rust-testing-patterns", "montana-pattern-regression-bugfix"]
     },
     {
       "name": "montana-go",
       "category": "language",
-      "composes_with": ["montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+      "composes_with": ["montana-global-contract", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake", "montana-go-service-patterns", "montana-go-http-boundaries", "montana-go-testing-patterns", "montana-pattern-regression-bugfix"]
     },
     {
       "name": "montana-py",
       "category": "language",
-      "composes_with": ["montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+      "composes_with": ["montana-global-contract", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake", "montana-pattern-regression-bugfix"]
     },
     {
       "name": "montana-ts",
       "category": "language",
-      "composes_with": ["montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+      "composes_with": ["montana-global-contract", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-ts-error-patterns", "montana-pattern-regression-bugfix"]
     },
     {
       "name": "montana-js",
       "category": "language",
-      "composes_with": ["montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+      "composes_with": ["montana-global-contract", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake", "montana-pattern-regression-bugfix"]
     },
     {
       "name": "montana-react",
       "category": "framework",
-      "composes_with": ["montana-ts", "montana-js", "montana-frontend-architecture", "montana-usecase-delivery"]
+      "composes_with": ["montana-global-contract", "montana-ts", "montana-js", "montana-frontend-architecture", "montana-usecase-delivery", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-react-form-patterns", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-pattern-regression-bugfix", "montana-pattern-conditional-rendering"]
     },
     {
       "name": "montana-frontend-architecture",
       "category": "architecture",
-      "composes_with": ["montana-ts", "montana-js", "montana-react", "montana-usecase-delivery"]
+      "composes_with": ["montana-global-contract", "montana-ts", "montana-js", "montana-react", "montana-usecase-delivery", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-react-form-patterns", "montana-pattern-conditional-rendering"]
     },
     {
       "name": "montana-backend-architecture",
       "category": "architecture",
-      "composes_with": ["montana-go", "montana-py", "montana-ts", "montana-rust", "montana-usecase-delivery"]
+      "composes_with": ["montana-global-contract", "montana-go", "montana-py", "montana-ts", "montana-rust", "montana-usecase-delivery", "montana-go-service-patterns", "montana-go-http-boundaries", "montana-go-testing-patterns", "montana-rust-error-patterns", "montana-rust-module-boundaries", "montana-rust-testing-patterns", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-ts-error-patterns"]
     },
     {
       "name": "montana-usecase-delivery",
       "category": "use-case",
-      "composes_with": ["montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-frontend-architecture", "montana-backend-architecture"]
+      "composes_with": ["montana-global-contract", "montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-ts-error-patterns", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-react-form-patterns", "montana-go-service-patterns", "montana-go-http-boundaries", "montana-go-testing-patterns", "montana-rust-error-patterns", "montana-rust-module-boundaries", "montana-rust-testing-patterns", "montana-pattern-regression-bugfix", "montana-pattern-conditional-rendering"]
     },
     {
       "name": "montana-release",
       "category": "use-case",
-      "composes_with": ["montana-usecase-delivery", "montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-frontend-architecture", "montana-backend-architecture"]
+      "composes_with": ["montana-global-contract", "montana-usecase-delivery", "montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-frontend-architecture", "montana-backend-architecture"]
+    },
+    {
+      "name": "montana-ts-style-decisions",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-ts", "montana-react", "montana-frontend-architecture", "montana-backend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "montana-react-rendering-patterns",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-react", "montana-ts", "montana-js", "montana-frontend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "montana-go-service-patterns",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-go", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-rust-error-patterns",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-rust", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-react-state-ownership",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-react", "montana-react-rendering-patterns", "montana-ts", "montana-js", "montana-frontend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "montana-ts-runtime-validation",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-ts", "montana-ts-style-decisions", "montana-react", "montana-backend-architecture", "montana-frontend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "montana-ts-error-patterns",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-ts", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-react", "montana-backend-architecture", "montana-usecase-delivery", "montana-pattern-regression-bugfix"]
+    },
+    {
+      "name": "montana-go-http-boundaries",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-go", "montana-go-service-patterns", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-go-testing-patterns",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-go", "montana-go-service-patterns", "montana-go-http-boundaries", "montana-backend-architecture", "montana-usecase-delivery", "montana-pattern-regression-bugfix"]
+    },
+    {
+      "name": "montana-rust-module-boundaries",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-rust", "montana-rust-error-patterns", "montana-backend-architecture", "montana-usecase-delivery", "montana-intake"]
+    },
+    {
+      "name": "montana-rust-testing-patterns",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-rust", "montana-rust-error-patterns", "montana-rust-module-boundaries", "montana-backend-architecture", "montana-usecase-delivery", "montana-pattern-regression-bugfix"]
+    },
+    {
+      "name": "montana-react-form-patterns",
+      "category": "decision",
+      "composes_with": ["montana-global-contract", "montana-react", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-ts", "montana-js", "montana-ts-runtime-validation", "montana-frontend-architecture", "montana-usecase-delivery", "montana-pattern-regression-bugfix"]
+    },
+    {
+      "name": "montana-pattern-regression-bugfix",
+      "category": "pattern",
+      "composes_with": ["montana-global-contract", "montana-intake", "montana-rust", "montana-go", "montana-py", "montana-ts", "montana-js", "montana-react", "montana-usecase-delivery", "montana-go-service-patterns", "montana-rust-error-patterns", "montana-ts-runtime-validation", "montana-react-state-ownership"]
+    },
+    {
+      "name": "montana-pattern-conditional-rendering",
+      "category": "pattern",
+      "composes_with": ["montana-global-contract", "montana-react", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-ts", "montana-js", "montana-frontend-architecture", "montana-usecase-delivery"]
     }
   ],
   "recommended_stacks": [
     {
       "name": "react-frontend",
-      "skills": ["montana-intake", "montana-ts", "montana-react", "montana-frontend-architecture", "montana-usecase-delivery"]
+      "skills": ["montana-global-contract", "montana-intake", "montana-ts", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-ts-error-patterns", "montana-react", "montana-react-rendering-patterns", "montana-react-state-ownership", "montana-react-form-patterns", "montana-frontend-architecture", "montana-pattern-conditional-rendering", "montana-pattern-regression-bugfix", "montana-usecase-delivery"]
     },
     {
       "name": "go-backend-api",
-      "skills": ["montana-intake", "montana-go", "montana-backend-architecture", "montana-usecase-delivery"]
+      "skills": ["montana-global-contract", "montana-intake", "montana-go", "montana-go-service-patterns", "montana-go-http-boundaries", "montana-go-testing-patterns", "montana-backend-architecture", "montana-pattern-regression-bugfix", "montana-usecase-delivery"]
     },
     {
       "name": "typescript-backend-service",
-      "skills": ["montana-intake", "montana-ts", "montana-backend-architecture", "montana-usecase-delivery"]
+      "skills": ["montana-global-contract", "montana-intake", "montana-ts", "montana-ts-style-decisions", "montana-ts-runtime-validation", "montana-ts-error-patterns", "montana-backend-architecture", "montana-pattern-regression-bugfix", "montana-usecase-delivery"]
     },
     {
       "name": "python-service",
-      "skills": ["montana-intake", "montana-py", "montana-backend-architecture", "montana-usecase-delivery"]
+      "skills": ["montana-global-contract", "montana-intake", "montana-py", "montana-backend-architecture", "montana-usecase-delivery"]
+    },
+    {
+      "name": "rust-backend-service",
+      "skills": ["montana-global-contract", "montana-intake", "montana-rust", "montana-rust-error-patterns", "montana-rust-module-boundaries", "montana-rust-testing-patterns", "montana-backend-architecture", "montana-pattern-regression-bugfix", "montana-usecase-delivery"]
     }
   ]
 }

@@ -1,7 +1,7 @@
 ---
 name: montana-js
 description: JavaScript workflow helper: Node tooling, lint/format/test, debugging, and safe refactors.
-metadata: {"montana":{"category":"language","composesWith":["montana-react","montana-frontend-architecture","montana-backend-architecture","montana-usecase-delivery","montana-intake"]}}
+metadata: {"montana":{"category":"language","composesWith":["montana-global-contract","montana-react","montana-frontend-architecture","montana-backend-architecture","montana-usecase-delivery","montana-intake","montana-pattern-regression-bugfix"]}}
 ---
 
 Use this skill when working on JavaScript codebases (Node or browser), fixing runtime/test failures, or performing safe refactors.
@@ -10,11 +10,13 @@ Use this skill when working on JavaScript codebases (Node or browser), fixing ru
 - Language
 
 ## Works with
+- `montana-global-contract`
 - `montana-react`
 - `montana-frontend-architecture`
 - `montana-backend-architecture`
 - `montana-usecase-delivery`
 - `montana-intake`
+- `montana-pattern-regression-bugfix`
 
 ## Consistency contract (non-negotiables)
 - Follow repo scripts/configs first (`package.json` scripts, eslint/prettier, test runner).

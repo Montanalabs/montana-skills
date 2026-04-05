@@ -1,7 +1,7 @@
 ---
 name: montana-go
 description: Go workflow helper: gofmt/go test, modules, debugging, and safe refactors.
-metadata: {"montana":{"category":"language","composesWith":["montana-backend-architecture","montana-usecase-delivery","montana-intake"]}}
+metadata: {"montana":{"category":"language","composesWith":["montana-global-contract","montana-backend-architecture","montana-usecase-delivery","montana-intake","montana-go-service-patterns","montana-go-http-boundaries","montana-go-testing-patterns","montana-pattern-regression-bugfix"]}}
 ---
 
 Use this skill when working on Go services/tools, fixing build/test failures, or doing safe refactors.
@@ -10,9 +10,14 @@ Use this skill when working on Go services/tools, fixing build/test failures, or
 - Language
 
 ## Works with
+- `montana-global-contract`
 - `montana-backend-architecture`
 - `montana-usecase-delivery`
 - `montana-intake`
+- `montana-go-service-patterns`
+- `montana-go-http-boundaries`
+- `montana-go-testing-patterns`
+- `montana-pattern-regression-bugfix`
 
 ## Consistency contract (non-negotiables)
 - Follow existing repo conventions/config first (lint rules, error style, folder structure).
